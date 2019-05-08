@@ -9,10 +9,10 @@
         android:topLeftRadius="25dp"
         android:topRightRadius="25dp" />
     <solid
-        android:color="@color/colorGray"/>
+        android:color="@color/colorBlack"/>
 
     <stroke
         android:width="2dp"
-        android:color="@color/colorGray" />
+        android:color="@color/colorBlack" />
 
 </shape>
