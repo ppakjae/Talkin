@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FindIdFinalActivity"></activity>
-        <activity android:name=".FindId" />
+        <activity android:name=".FindIdActivity"></activity>
+        <activity android:name=".FindIdFinalActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

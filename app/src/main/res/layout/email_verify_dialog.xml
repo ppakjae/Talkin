@@ -15,11 +15,13 @@
         android:layout_marginTop="20dp">
 
         <ImageView
+            android:id="@+id/imgMail"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/mail_y"/>
 
         <TextView
+            android:id="@+id/txtEmailVerifyTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="이메일 인증"
@@ -31,6 +33,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/txtEmailVerifyText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="인증번호가 전송되었습니다."
@@ -47,6 +50,7 @@
         android:layout_marginHorizontal="20dp"/>
 
     <Button
+        android:id="@+id/btnEmailVerifyDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="확인"

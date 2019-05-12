@@ -1,6 +1,6 @@
 package com.example.talkin;
 
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId())
             {
                 case R.id.txtId:
+                    show();
                     break;
                 case R.id.txtPw:
                     break;
@@ -83,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+
+    public void show(){
+        Intent intent = new Intent(MainActivity.this, FindIdActivity.class);
+        startActivity(intent);
+    }
 
 
 }

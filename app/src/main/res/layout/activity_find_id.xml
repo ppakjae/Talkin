@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindId"
+    tools:context=".FindIdActivity"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/back" 
+            android:src="@drawable/back"
             android:layout_centerVertical="true"/>
 
         <TextView
@@ -26,7 +26,7 @@
             android:textStyle="bold"
             android:textColor="#000000"
             android:layout_centerInParent="true"/>
-        
+
     </RelativeLayout>
 
     <View
@@ -41,7 +41,7 @@
         android:paddingVertical="40dp"
         android:paddingHorizontal="40dp"
         android:background="#F7F7F7">
-        
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -101,6 +101,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btnTransfer"
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:text="인증번호 전송"
@@ -167,6 +168,7 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btnVerify"
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:text="인증하기"
