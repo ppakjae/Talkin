@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class FindpwActivity extends AppCompatActivity {
+public class FindPwActivity extends AppCompatActivity {
 
     Button btnIdCheck;
     Button btnMailCheck;
