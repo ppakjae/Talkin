@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join">
+
+    <RelativeLayout
+        android:id="@+id/layoutR1"
+        android:layout_width="match_parent"
+        android:layout_height="89.5dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_above="@id/vLine1"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_above="@id/vLine1"/>
+
+        <View
+            android:id="@+id/vLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#E2E2E2" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutR1"
+        android:background="#F7F7F7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layoutR2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="48dp">
+
+                <ImageView
+                    android:id="@+id/imgName"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/name_g"/>
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgName"
+                    android:layout_toRightOf="@+id/imgName"
+                    android:textSize="12dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#000000"
+                    android:hint="성명"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/edtName"
+                    android:layout_alignLeft="@+id/edtName"
+                    android:layout_below="@+id/edtName"
+                    android:text="실명을 입력해주세요."
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutR3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutR2"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="31dp">
+
+                <ImageView
+                    android:id="@+id/imgId"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/id_g"/>
+
+                <EditText
+                    android:id="@+id/edtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgId"
+                    android:layout_toRightOf="@+id/imgId"
+                    android:textSize="12dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#000000"
+                    android:hint="아이디 (6-14자)"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/edtId"
+                    android:layout_alignLeft="@+id/edtId"
+                    android:layout_below="@+id/edtId"
+                    android:text="사용할 수 없는 아이디입니다."
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutR4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutR3"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="31dp">
+
+                <ImageView
+                    android:id="@+id/imgPw"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pw_g"/>
+
+                <EditText
+                    android:id="@+id/edtPw"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgPw"
+                    android:layout_toRightOf="@+id/imgPw"
+                    android:hint="비밀번호 (6-14자)"
+                    android:inputType="text"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/edtPw"
+                    android:layout_alignLeft="@+id/edtPw"
+                    android:layout_below="@+id/edtPw"
+                    android:text="영문자, 숫자를 조합해주세요."
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutR5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutR4"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="31dp">
+
+                <ImageView
+                    android:id="@+id/imgCheck"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pw_g"/>
+
+                <EditText
+                    android:id="@+id/edtCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgCheck"
+                    android:layout_toRightOf="@+id/imgCheck"
+                    android:textSize="12dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#000000"
+                    android:hint="비밀번호 확인"/>
+
+                <ImageView
+                    android:id="@+id/imgUncheck"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignEnd="@+id/edtCheck"
+                    android:layout_alignRight="@+id/edtCheck"
+                    android:src="@drawable/pw_unchecked" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutR6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutR5"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="29dp">
+
+                <ImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mail_g"/>
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgEmail"
+                    android:layout_toRightOf="@+id/imgEmail"
+                    android:hint="이메일"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/layoutR6"
+                android:layout_marginLeft="104dp"
+                android:layout_marginRight="104dp">
+
+                <Button
+                    android:id="@+id/btnTransfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="32.6dp"
+                    android:background="@drawable/buttoncheck"
+                    android:layout_marginTop="25.3dp"
+                    android:text="인증번호 전송"
+                    android:textSize="10dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="31dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="14dp"
+                        android:background="#E2E2E2"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_alignParentBottom="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="인증번호가 오지 않는다면?"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:text="이메일을 정확하게 입력하셧는지,\n 스팸메일로 등록되어 있는지 확인해주세요!"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutR7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutL1"
+                android:layout_marginLeft="59dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="29dp">
+
+                <ImageView
+                    android:id="@+id/imgEmailCheck"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mail_check_g"/>
+
+                <EditText
+                    android:id="@+id/edtEmailCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/imgEmailCheck"
+                    android:layout_toRightOf="@+id/imgEmailCheck"
+                    android:textSize="12dp"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#000000"
+                    android:hint="인증번호 6자리 입력"/>
+
+                <Button
+                    android:id="@+id/btnVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="32.6dp"
+                    android:background="@drawable/buttoncheck"
+                    android:layout_below="@+id/edtEmailCheck"
+                    android:layout_marginTop="25.3dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:text="인증하기"
+                    android:textSize="10dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnEnroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutR7"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="43dp"
+                android:layout_marginRight="59dp"
+                android:layout_marginBottom="43dp"
+                android:background="@drawable/buttonenroll"
+                android:gravity="center"
+                android:text="가입하기"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
