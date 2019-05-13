@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.txtPw:
                     break;
                 case R.id.txtJoin:
-                    String id = edtId.getText().toString();
-                    String pw = edtPw.getText().toString();
+                    Intent intent = new Intent(MainActivity.this, Join.class);
+                    startActivity(intent);
                     break;
                 case R.id.txtLogin:
                     break;
