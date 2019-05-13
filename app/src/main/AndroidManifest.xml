@@ -13,6 +13,8 @@
         <activity android:name=".JoinFinal" />
         <activity android:name=".FindIdActivity" />
         <activity android:name=".FindIdFinalActivity" />
+        <activity android:name=".FindPwActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

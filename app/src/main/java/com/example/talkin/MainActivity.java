@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     show();
                     break;
                 case R.id.txtPw:
+                    Intent intentPw = new Intent(MainActivity.this, FindPwActivity.class);
+                    startActivity(intentPw);
                     break;
                 case R.id.txtJoin:
                     Intent intent = new Intent(MainActivity.this, Join.class);

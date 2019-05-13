@@ -20,7 +20,7 @@ public class FindPwActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.find_pw);
 
         btnIdCheck = (Button) findViewById(R.id.btnIdCheck);
         btnMailCheck = (Button) findViewById(R.id.btnMailCheck);
