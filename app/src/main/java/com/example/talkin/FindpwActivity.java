@@ -16,6 +16,8 @@ public class FindpwActivity extends AppCompatActivity {
     EditText edtMail;
     EditText edtRecognize;
 
+    //수정
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
