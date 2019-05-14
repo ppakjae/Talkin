@@ -23,6 +23,7 @@
         android:layout_height="60dp"
         android:hint="아이디"
         android:textColorHint="@color/colorHintText"
+        android:textColor="@color/colorTextBlack"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:textSize="14dp"
@@ -39,6 +40,7 @@
         android:layout_height="60dp"
         android:hint="비밀번호"
         android:textColorHint="@color/colorHintText"
+        android:textColor="@color/colorTextBlack"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:textSize="14dp"
@@ -49,13 +51,12 @@
         android:layout_below="@+id/edtId"
         android:inputType="textPassword"/>
 
-    <ImageButton
-        android:id="@+id/imgbtnKeep"
+    <ImageView
+        android:id="@+id/imgKeep"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/login_unchecked"
         android:scaleType="centerCrop"
-        android:background="#FFFFFFFF"
         android:layout_below="@+id/edtPw"
         android:layout_marginLeft="126dp"
         android:layout_marginTop="25dp"/>
@@ -68,7 +69,7 @@
         android:textStyle="bold"
         android:textSize="12dp"
         android:textColor="@color/colorBlack"
-        android:layout_toRightOf="@+id/imgbtnKeep"
+        android:layout_toRightOf="@+id/imgKeep"
         android:layout_below="@+id/edtPw"
         android:layout_marginTop="35dp"/>
     
@@ -80,7 +81,7 @@
         android:gravity="center"
         android:textColor="#ffffff"
         android:background="@drawable/round_solid_gray_background"
-        android:backgroundTint="@color/colorGray"
+
         android:layout_below="@+id/txtState"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
