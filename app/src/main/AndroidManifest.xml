@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Join"></activity>
-        <activity android:name=".JoinFinal" />
+        <activity android:name=".JoinActivity"></activity>
+        <activity android:name=".JoinFinalActivity" />
         <activity android:name=".FindIdActivity" />
         <activity android:name=".FindIdFinalActivity" />
         <activity android:name=".FindPwActivity" />
