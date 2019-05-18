@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Join extends AppCompatActivity {
+public class JoinActivity extends AppCompatActivity {
 
     Button btnEnroll;
     Button btnTransfer;
@@ -219,11 +219,11 @@ public class Join extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.imgBack:
-                    Intent intent1 = new Intent(Join.this, MainActivity.class);
+                    Intent intent1 = new Intent(JoinActivity.this, MainActivity.class);
                     startActivity(intent1);
                     break;
                 case R.id.btnEnroll:
-                    Intent intent2 = new Intent(Join.this, JoinFinal.class);
+                    Intent intent2 = new Intent(JoinActivity.this, JoinFinalActivity.class);
                     startActivity(intent2);
                     break;
 

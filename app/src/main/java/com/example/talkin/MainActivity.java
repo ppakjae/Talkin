@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intentPw);
                     break;
                 case R.id.txtJoin:
-                    Intent intent = new Intent(MainActivity.this, Join.class);
+                    Intent intent = new Intent(MainActivity.this, JoinActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.txtLogin:
