@@ -1,5 +1,6 @@
 package com.example.talkin;
 
+import android.app.Dialog;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -152,8 +153,8 @@ public class FindPwActivity extends AppCompatActivity {
         btnMailCheck.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                EmailVerifyDialog emailVerifyDialog = new EmailVerifyDialog(FindPwActivity.this);
-                emailVerifyDialog.show();
+                IdCheckDialog idCheckDialog = new IdCheckDialog(FindPwActivity.this);
+                idCheckDialog.show();
             }
         });
 
@@ -167,8 +168,8 @@ public class FindPwActivity extends AppCompatActivity {
 //                    emailVerifyDialog.show();
 //                }
 //                else{
-                EmailVerifyDialog emailVerifyDialog = new EmailVerifyDialog(FindPwActivity.this, "인증 완료" ,"이메일 인증이 완료되었습니다." );
-                emailVerifyDialog.show();
+                IdCheckDialog idCheckDialog = new IdCheckDialog(FindPwActivity.this, "인증 완료" ,"이메일 인증이 완료되었습니다." );
+                idCheckDialog.show();
 
 //                }
             }

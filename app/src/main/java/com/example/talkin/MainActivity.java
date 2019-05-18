@@ -71,26 +71,20 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId())
             {
                 case R.id.txtId:
-                    show();
+                    Intent intentId = new Intent(MainActivity.this, FindIdActivity.class);
+                    startActivity(intentId);
                     break;
                 case R.id.txtPw:
                     Intent intentPw = new Intent(MainActivity.this, FindPwActivity.class);
                     startActivity(intentPw);
                     break;
                 case R.id.txtJoin:
-                    Intent intent = new Intent(MainActivity.this, JoinActivity.class);
-                    startActivity(intent);
+                    Intent intentJoin = new Intent(MainActivity.this, JoinActivity.class);
+                    startActivity(intentJoin);
                     break;
                 case R.id.txtLogin:
                     break;
             }
         }
     };
-
-    public void show(){
-        Intent intent = new Intent(MainActivity.this, FindIdActivity.class);
-        startActivity(intent);
-    }
-
-
 }
