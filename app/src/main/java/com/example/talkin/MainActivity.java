@@ -2,6 +2,7 @@ package com.example.talkin;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -85,10 +86,15 @@ public class MainActivity extends AppCompatActivity {
             {
                 case R.id.txtId:
                     onResume();
+                    show();
                     break;
                 case R.id.txtPw:
+                    Intent intentPw = new Intent(MainActivity.this, FindPwActivity.class);
+                    startActivity(intentPw);
                     break;
                 case R.id.txtJoin:
+                    Intent intent = new Intent(MainActivity.this, Join.class);
+                    startActivity(intent);
                     break;
                 case R.id.txtLogin:
                     break;
@@ -109,8 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    class Monitor implements TextWatcher
-    {
+    class Monitor implements TextWatcher {
 
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -120,8 +125,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             _id = edtId.getText().toString();
-            if(s.length() >=4)
-            {
+            if (s.length() >= 4) {
                 txtLogin.setBackgroundResource(R.drawable.round_solid_yellow_background);
             } else {
                 txtLogin.setBackgroundResource(R.drawable.round_solid_gray_background);
@@ -134,5 +138,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    public void show()
+    {
+        Intent intent = new Intent(MainActivity.this, FindIdActivity.class);
+        startActivity(intent);
+    }
 }

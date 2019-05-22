@@ -15,4 +15,9 @@
         android:width="2dp"
         android:color="@color/colorYellow" />
 
+    <stroke
+        android:width="2dp"
+        android:color="#FFC81A" />
+
+
 </shape>
