@@ -1,5 +1,6 @@
 package com.example.talkin;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
@@ -84,11 +85,17 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId())
             {
                 case R.id.txtId:
+                    Intent intentId = new Intent(MainActivity.this, FindIdActivity.class);
+                    startActivity(intentId);
                     onResume();
                     break;
                 case R.id.txtPw:
+                    Intent intentPw = new Intent(MainActivity.this, FindPwActivity.class);
+                    startActivity(intentPw);
                     break;
                 case R.id.txtJoin:
+                    Intent intentJoin = new Intent(MainActivity.this, JoinActivity.class);
+                    startActivity(intentJoin);
                     break;
                 case R.id.txtLogin:
                     break;
