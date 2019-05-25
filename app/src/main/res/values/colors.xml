@@ -7,4 +7,7 @@
     <color name="colorGray">#E2E2E2</color>
     <color name="colorBlack">#000000</color>
     <color name="colorHintText">#A5A5A5</color>
+    <color name="colorTextBlack">#363636</color>
+
+    <color name="colorYellow">#FFC81A</color>
 </resources>
