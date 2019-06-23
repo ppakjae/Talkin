@@ -36,7 +36,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/menu" />
 
-            <view
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="#E2E2E2"
@@ -59,10 +59,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_gravity="end">
+        android:layout_gravity="end"
+        android:background="#ffffff">
 
         <RelativeLayout
             android:id="@+id/Relative1_nav"
@@ -74,15 +75,15 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/cancel"
-                android:layout_marginTop="49dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="16dp"/>
 
             <ImageView
                 android:id="@+id/imgmy_nav"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginStart="121dp"
-                android:layout_marginTop="49dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="16dp"
                 android:layout_toEndOf="@+id/imgback_nav"
                 android:src="@drawable/my" />
 
@@ -91,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgback_nav"
-                android:layout_marginTop="46dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginLeft="35dp"
                 android:orientation="horizontal">
 
@@ -120,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear1_nav"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginLeft="35dp"
                 android:text="Z1HET#GES"
                 android:textColor="#363636"
@@ -154,7 +155,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="32dp">
+            android:layout_marginTop="24dp">
 
             <TextView
                 android:id="@+id/tventer_nav"
@@ -204,7 +205,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="24dp">
 
             <TextView
                 android:id="@+id/tvmodify_nav"
