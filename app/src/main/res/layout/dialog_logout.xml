@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@drawable/dialog_round">
 
     <LinearLayout
-        android:id="@+id/linear1"
+        android:id="@+id/linear1_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -17,7 +15,6 @@
         android:layout_marginTop="32dp">
 
         <ImageView
-            android:id="@+id/imglogout"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="-16dp"
@@ -25,7 +22,6 @@
             android:src="@drawable/logout"/>
 
         <TextView
-            android:id="@+id/txtMessage_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="로그아웃"
@@ -37,17 +33,16 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear2"
+        android:id="@+id/linear2_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@+id/linear1"
+        android:layout_below="@+id/linear1_logout"
         android:layout_marginTop="34dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
 
         <TextView
-            android:id="@+id/txtMessage_sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="정말 로그아웃 하시겠습니까?"
@@ -65,10 +60,9 @@
 
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/linear2"
+        android:layout_below="@+id/linear2_logout"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="20.5dp"

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinSendingActivity">
+
+    <RelativeLayout
+        android:id="@+id/Relative1_mailbox"
+        android:layout_width="match_parent"
+        android:layout_height="89.5dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imgback_sending"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="참여 전송함"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:gravity="center|bottom"
+            android:paddingBottom="24dp"/>
+
+        <ImageView
+            android:id="@+id/imgnav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E2E2E2"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative2_sending"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/Relative1_mailbox">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="닉네임을 누르면 OP.GG를 통해 게임 정보가 보여집니다.\n\n또한 신청 정보는 24시간 후 자동으로 삭제됩니다."
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="#a5a5a5"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="참여 전송함이 비어있습니다."
+        android:gravity="center"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_sending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/Relative1_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgback_nav"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/cancel"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <ImageView
+                    android:id="@+id/imgmy_nav"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/imgback_nav"
+                    android:src="@drawable/my" />
+
+                <LinearLayout
+                    android:id="@+id/linear1_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgback_nav"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvname_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="최지희 "
+                        android:textColor="#000"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvname2_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="님"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvid_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear1_nav"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Z1HET#GES"
+                    android:textColor="#363636"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tvemail_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvid_nav"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="pmk9440@naver.com"
+                    android:textColor="#363636"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/view1_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#E7E7E7"
+                    android:layout_below="@+id/tvemail_nav"
+                    android:layout_marginTop="30.5dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Relative2_nav"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/tventer_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="게임 참여"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/tvreceive_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신청 수신함"
+                    android:textColor="#363636"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/tventer_nav"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/tvsend_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="신청 전송함"
+                    android:textColor="#363636"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/tvreceive_nav"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <View
+                    android:id="@+id/view2_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#E7E7E7"
+                    android:layout_below="@+id/tvsend_nav"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvmodify_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정보 수정"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/tvpwchange_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 변경"
+                    android:textColor="#363636"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/tvmodify_nav"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/tvout_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원 탈퇴"
+                    android:textColor="#363636"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/tvpwchange_nav"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="35dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#f7f7f7">
+
+                <ImageView
+                    android:id="@+id/imglogout_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-70dp"
+                    android:layout_toStartOf="@+id/tvlogout_nav"
+                    android:src="@drawable/logout"
+                    android:paddingBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvlogout_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="34dp"
+                    android:gravity="center"
+                    android:text="로그아웃"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>
