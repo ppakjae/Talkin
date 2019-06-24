@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intentJoin);
                     break;
                 case R.id.txtLogin:
+                    Intent intentMainpage = new Intent(MainActivity.this, MainpageActivity.class);
+                    startActivity(intentMainpage);
                     break;
             }
         }

@@ -12,6 +12,10 @@
         <activity android:name=".Ow_cm"></activity>
         <activity android:name=".Ow_level" />
         <activity android:name=".JoinActivity" />
+        <activity android:name=".JoinSendingActivity"></activity>
+        <activity android:name=".JoinMailboxActivity" />
+        <activity android:name=".MainpageActivity" />
+        <activity android:name=".JoinActivity" />
         <activity android:name=".JoinFinalActivity" />
         <activity android:name=".FindIdActivity" />
         <activity android:name=".FindIdFinalActivity" />
