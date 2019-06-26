@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindIdActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,22 +35,37 @@
             android:layout_height="350dp">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="300dp">
 
                 <ImageView
                     android:id="@+id/ow_cover"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
                     android:src="@drawable/ow" />
 
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#88000000" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="OVER WATCH"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"/>
+
                 <ImageView
-                    android:layout_width="235dp"
-                    android:layout_height="246dp"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:src="@drawable/ow_c" />
+                    android:src="@drawable/ow_c"
+                    android:scaleType="centerCrop"/>
 
             </RelativeLayout>
 
@@ -94,15 +103,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ListView
-                android:id="@+id/levelList"
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            </ListView>
+                <ListView
+                    android:id="@+id/levelList"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                </ListView>
+
+            </ScrollView>
 
         </LinearLayout>
 
-    </LinearLayout>
+</LinearLayout>
 
-</ScrollView>
